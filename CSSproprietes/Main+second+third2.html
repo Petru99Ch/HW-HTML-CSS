@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        
+        <title>BOX</title>
+        <style>
+            html{
+                height: 100%;
+            }
+
+            body{
+               height: 100%;
+            }
+            .main{
+                height: 50%;
+            }
+            .header, .main, .footer{
+                border: 2px solid black;
+                padding: 20px;
+            }
+
+            .first, .second, .third{
+                border: 5px double black;
+                box-sizing: border-box;
+
+            }
+            .first{
+                width: 100%;
+                height: 55%;
+                margin-bottom: 5vh;
+            }
+            .second{
+                width: 45%;
+                height: 35%;
+                margin-right: 10%;
+            }
+            .third{
+                width: 45%;
+                height: 35%;
+            }
+            
+            .second, .third{
+                float:left;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <header class="header">
+            Header
+        </header>
+        <main class="main">
+            <section class="first">
+                First
+            </section>
+            <article class="second">
+                Second
+            </article>
+            <article class="third">
+                Third
+            </article>
+        </main>
+        <footer class="footer">
+            Footer
+        </footer>       
+    </body>
+</html>
