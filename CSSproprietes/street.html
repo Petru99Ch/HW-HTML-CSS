@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HOUSE</title>
+        <style>
+            body{
+                background-color: #223;
+            }
+            .house{
+                display: inline-block;
+                vertical-align: bottom;
+            }
+            .roff{
+                width: 0px;               
+                /* background-color: orange; */
+                border: 50px solid rgb(86, 14, 14);
+                border-top: none;       
+                border-left-color: transparent;
+                border-right-color: transparent;  
+                border-bottom-width: 60px;       
+
+            }
+            .wall{
+                width: 100px;
+                height: 100px;
+                background-color: bisque;
+                display: inline-block;
+                
+            }
+            .window-left{
+                border: 2px solid rgb(123, 36, 36);
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                margin-left: 5px;
+                transform: translateY(-50px);
+                
+                
+            }
+            .wind1{
+                border: 1px solid black;
+                width: 8px;
+                height: 8px;
+                float: left;
+                background-color: rgb(230, 230, 111);
+                
+
+            }
+            .wind2{
+                border: 1px solid black;
+                width: 8px;
+                height: 8px;
+                float: left;
+                background-color: rgb(230, 230, 111);
+                
+            }
+
+            .wind3{
+                border: 1px solid black;
+                width: 8px;
+                height: 8px;
+                float: left;
+                background-color: rgb(230, 230, 111);
+                
+                
+            }
+
+            .wind4{
+                border: 1px solid black;
+                width: 8px;
+                height: 8px;
+                float: left;
+                background-color: rgb(230, 230, 111);
+                
+            }
+            .door{
+                border: 2px solid rgb(123, 36, 36);
+                width: 30px;
+                height: 80px;
+                display: inline-block;
+                vertical-align: bottom;
+                margin-top: 15px;
+                text-align: right;
+                font-size: 40px;
+                background-color: brown;
+            }
+            .window-right{
+                border: 2px solid rgb(123, 36, 36);
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                transform: translateY(-50px);                          
+            }
+         
+            .tree{
+                display: inline-block;
+                vertical-align: bottom;                
+            }
+            .crown{
+                width: 70px;
+                height: 100px;
+                background-color: green;
+                margin-left: 50px;
+                border-radius: 60px;
+            }
+            .stem{
+                background-color: rgb(151, 80, 4);
+                width: 20px;
+                height: 100px;
+                margin-left: 75px;
+                margin-top: -10px;
+                
+                
+            }
+            .apple{
+                width: 5px;
+                height: 5px;
+                background-color: red;
+                display: inline-block;                
+                margin-top: 17px;
+                margin-left: 11px;
+                border-radius: 5px;                
+            }
+            .building-tall{
+                width: 100px;
+                height: 300px;
+                background-image:linear-gradient(black, rgb(161, 81, 15));
+                background-size: 5px 5px;
+                display: inline-block;
+                margin-left: 20px;
+                vertical-align: top;
+            }
+            .wind-build-tall{
+                width: 40px;
+                height: 40px;
+                border: 2px solid black;
+                display: inline-block;
+                margin-left: 30px;
+                margin-top: 10px;    
+                background-color: rgb(242, 242, 125);            
+            }
+            .door-build-tall{
+                width: 30px;
+                height: 65px;
+                background-color: brown;
+                border: 2px solid black;
+                margin-left: 35px;
+                text-align: right;
+                font-size: 40px;
+                
+            }
+            .building-small{
+                width: 100px;
+                height: 150px;
+                background-color: beige;
+                display: inline-block;
+                vertical-align: bottom;
+                margin-left: 20px;
+                background-image:linear-gradient(black, rgb(250, 250, 250));
+                background-size: 5px 5px;
+            }            
+            .wind-build-small{
+                width: 40px;
+                height: 40px;
+                border: 2px solid black;
+                
+                margin-left: 30px;
+                margin-top: 10px;    
+                background-color: rgb(242, 242, 125); 
+                margin-bottom: -20px;
+            }
+            .balcon{
+                width: 120px;
+                height: 20px;
+                background-color: rgb(191, 246, 235);
+                margin-left: -11px;
+                border: 2px solid black;
+            }
+            .door-build-small{
+                width: 30px;
+                height: 65px;
+                background-color: brown;
+                border: 2px solid black;
+                margin-left: 35px;
+                transform: translateY(25px);
+                text-align: right;
+                font-size: 40px;
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div class="street">
+            <div class="house">
+                <div class="roff"></div>
+                <div class="wall">
+                    <div class="window-left">
+                        <div class="wind1"></div>
+                        <div class="wind2"></div>
+                        <div class="wind3"></div>
+                        <div class="wind4"></div>
+                    </div>
+                    <div class="door">.</div>
+                    <div class="window-right">
+                        <div class="wind1"></div>
+                        <div class="wind2"></div>
+                        <div class="wind3"></div>
+                        <div class="wind4"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tree">
+                <div class="crown">
+                    <div class="apple"></div>
+                    <div class="apple"></div>
+                    <div class="apple"></div>
+                    <div class="apple"></div>
+                    <div class="apple"></div>
+                    <div class="apple"></div>
+                    <div class="apple"></div>
+                    <div class="apple"></div>
+                    <div class="apple"></div>
+                    
+                </div>
+                <div class="stem"></div>
+            </div>
+
+            <div class="building-tall">
+                <div class="wind-build-tall"></div>
+                <div class="wind-build-tall"></div>
+                <div class="wind-build-tall"></div>
+                <div class="wind-build-tall"></div>
+                <div class="door-build-tall">.</div>
+            </div>
+            <div class="building-small">
+                <div class="wind-build-small"></div>
+                <div class="balcon"></div>
+                <div class="door-build-small">.</div>
+            </div>
+        </div>
+    </body>
+</html>
