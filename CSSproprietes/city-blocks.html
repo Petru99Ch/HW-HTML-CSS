@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            body{
+                background-color: CadetBlue;
+            }
+            #city{
+                width: 400px;
+                height: 400px;
+                background-color:AliceBlue ;
+                border: 2px solid BurlyWood;
+            }
+            #square{
+                width: 150px;
+                height: 150px;
+                background-color: DarkGray;
+                display: inline-block;
+                margin-right: -4px;
+                vertical-align: top;
+                
+            }
+            .circle{
+                margin: 20px;
+                width: 100px;
+                height: 100px;
+                border: 2px dashed white;
+                border-radius: 200px;
+                text-align: center;
+                line-height: 100px;
+                font-size: 50px;
+            }
+            .streetA{
+                background-color: #555;
+                display: inline-block;
+                width: 250px;
+                height: 150px;
+                margin-bottom: -4px;
+            }
+            .streetB{
+                background-color: #555;
+                
+                width: 150px;
+                height: 250px;
+                display: inline-block;
+                
+            }
+            .main-band{
+                width: 73px;
+                height: inherit;
+                border-right: 2px solid white;
+                display: inline-block;
+            }
+            .second-band{
+                width: 7px;
+                height: inherit;              
+                display: inline-block;
+                margin-left: -4px;
+            }            
+            .righ-band{
+                width:inherit;
+                height: 73px;
+                border-bottom: 2px solid white;
+            }
+            .left-band{
+                width:inherit;
+                height: 73px;
+                border-bottom: 2px solid white;
+            }
+            .band-marker-h{
+                width: inherit;
+                height: 35px;
+                border-bottom: 2px dashed white;
+            }
+            .band-marker-v{
+                width: 35px;
+                height: inherit;
+                border-right: 2px dashed white;
+            }
+            .park{
+                width: 250px;
+                height: 250px;
+                vertical-align: top;
+                display: inline-block;
+                margin-top: -4px;
+                margin-left: -4px;
+                margin-bottom: -4px;
+                font-size: 50px;
+                text-align: center;
+                line-height: 83px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="city">
+            <div id="square">
+                <div class="circle">
+                    ♞
+                </div>
+            </div>
+            <div class="streetA"> 
+                <div class="righ-band"> 
+                    <div class="band-marker-h">
+                    </div>                    
+                </div>   
+                <div class="left-band"> 
+                    <div class="band-marker-h">
+                    </div>                    
+                </div>                
+            </div>
+            <div class="streetB">
+                <div class="main-band">   
+                    <div class="band-marker-v">
+                    </div>                 
+                </div>   
+                <div class="second-band">   
+                    <div class="band-marker-v">        
+                                        
+                    </div>                 
+                </div>              
+            </div>
+            <div class="park">
+                🌳 🌳 🌳 🌳 🌳 🌳 🌳 🌳 🌳
+
+            </div>
+        </div>        
+    </body>
+</html>
