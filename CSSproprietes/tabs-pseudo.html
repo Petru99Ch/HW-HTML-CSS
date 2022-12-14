@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>New Tab - pseudo</title>
+        <style>
+            body{
+                background-color: #222;
+            }
+            .tabs-item{
+                width: 90px;
+                height: 90px;
+                background-color: #AAA;
+                list-style-type: none;
+                display: inline-block;
+                margin: 3px;
+                padding: 15px;
+                border-radius: 10px;
+                vertical-align: top;
+                text-align: center;
+                transition: 0.5s;
+                font-size: 15px;
+                font-family: Arial;
+            }
+            .tabs-item:hover{
+                background-color: #666;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            .tabs-option{
+                font-size: 30px;
+                line-height: 5px;
+                transform: translateX(70px) translateY(-75px);
+                width: 25px;
+                height: 25px;
+                
+                border-radius: 15px;
+                padding-bottom: 2px;     
+                opacity: 0;       
+                transition: 0.5s;                   
+            }
+            .tabs-option:hover{
+                background-color: #555;
+                opacity: 1;
+            }
+            .option-link{
+                color: black;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <ul class="tabs">
+            <li class="tabs-item">
+                
+                <a href="#"><img src="https://icons.iconarchive.com/icons/dakirby309/simply-styled/48/YouTube-icon.png" alt="Youtube">
+                    YouTube</a>
+                <div class="tabs-option">   
+                 <a href="#" class="option-link">.<br/>.<br/>. </a>
+
+                </div>            
+            </li>
+            <li class="tabs-item">  
+                <a href="#">
+                    <img src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/48/google-icon.png" alt="Google">
+                    Google
+                </a>
+                <div class="tabs-option">   
+                <a href="#" class="option-link">.<br/>.<br/>. </a>
+
+                </div>     
+            </li>
+            <li class="tabs-item">
+                <a href="#">
+                    <img src="https://icons.iconarchive.com/icons/sicons/basic-round-social/48/yandex-icon.png" alt="Yandex">
+                    Yandex
+                </a>
+                <div class="tabs-option">   
+                <a href="#" class="option-link">.<br/>.<br/>. </a>
+
+                </div>     
+            </li>
+            <li class="tabs-item">
+                <div class="new-tab">
+                    <a href="#">
+                        <img src="https://icons.iconarchive.com/icons/icons8/windows-8/48/Science-Plus2-Math-icon.png" alt="New-Tab"><br/>
+                        New Tab
+                    </a>
+
+                </div>               
+
+                   
+            </li>
+        </ul>
+    </body>
+</html>
