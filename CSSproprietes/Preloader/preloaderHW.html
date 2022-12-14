@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PRELOADER CSS</title>
+        <style>
+            body{
+                background-color: #333;
+            }
+            h1{
+                color: white;
+            }
+            .preloader div{
+                width: 20px;
+                height: 20px;
+               margin: 5px;
+                background-color: orange;   
+                color: transparent;
+                                              
+            }
+
+            .preloader div:first-child{
+                
+                animation: jump 1s 10; /* compact */
+                animation-name: jump; /* name animation */
+                animation-duration: 1s; /* time duration animation*/
+                animation-iteration-count: 10; /* count nr */
+                animation-direction: alternate; /* repet animation flow */ 
+            }
+
+            .preloader div:nth-child(2){
+                animation: jump 1s 10;
+                animation-delay: 0.2s;
+                animation-direction: alternate;
+
+            }
+
+            .preloader div:nth-child(3){
+                animation: jump 1s 10;
+                animation-delay: 0.4s;
+                animation-direction: alternate;
+
+            }
+            .preloader div:nth-child(4){
+                animation: jump 1s 10;
+                animation-delay: 0.6s;
+                animation-direction: alternate;
+
+            }
+
+            .preloader div:last-child{
+                animation: jump 1s 10;
+                animation-delay: 0.8s;
+                animation-direction: alternate;
+
+            }
+
+
+
+
+
+        @keyframes jump/* name animation */{
+            from{transform: translateX(0px);
+                background-color: rgb(191, 255, 0);
+            }
+
+            to{transform: translateX(50px);
+                background-color: rgb(255, 0, 0);}
+        }
+
+
+        /* HW1: 1) .preloader height?
+                2) .preloader div height?
+                
+                1) .preloader height: Высота равняется с 5 div*18 px - font-size по умолчанию
+                2) .preloader div heigt: Высота равняется 1 div * 18px - font-size по умалчанию 
+        */      
+        </style>
+    </head>
+    <body>
+        <h1>PRELOADER CSS</h1>
+        <div class="preloader">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+
+    </body>
+</html>
