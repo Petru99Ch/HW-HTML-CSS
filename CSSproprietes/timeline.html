@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>TIMELINE</title>
+        <style>
+            
+            
+            body{
+                
+                background-color: #225;
+                color: white;
+                margin: 0;
+                font-family: sans-serif;
+            }
+            
+           .timeline h1{
+                margin: 0;   
+                text-align: center;       
+                padding: 5%;  
+            }
+           .timeline h2, 
+           .timeline h3, 
+           .timeline p           
+                        {
+                            margin: 0;
+                            padding: 0;
+                            list-style: none;
+                        }
+            .timeline li{
+                opacity: 75%;
+                transition: 0.5s;
+                cursor: pointer;
+                scroll-snap-align: start;
+            }
+            .timeline li:hover{
+                opacity: 1;
+            }
+            .timeline time{
+                opacity: 0;
+                transition: 0.25s
+            }
+            .timeline li:hover time{
+                opacity: 1;
+            }
+         
+            
+           .timeline ol {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 50%;
+            border-left: 5px solid rgb(255, 98, 0);
+            height: 100%;
+          
+            }
+
+            .timeline h2{
+                color: orange;
+            }
+
+            .timeline li:nth-child(odd){
+                /* visibility: hidden; */
+                text-align: right;
+                transform: translateX(-109%);
+            }
+            .timeline li:nth-child(even){
+                padding-left: 5%;
+                margin-bottom: 15%;
+            }
+            .timeline li:nth-child(even) h3,
+            .timeline li:nth-child(even) p {
+                padding-left: 7%;
+            }
+            .timeline li:nth-child(even)::before{
+                content: "◉";
+                font-size: 200%;
+                transform: translateX(-130%) translateY(90%);
+                display: inline-block;
+                color: orange;
+                
+            }
+
+            .timeline li:nth-child(odd) h3,
+            .timeline li:nth-child(odd) p {
+                padding-right: 7%;
+            }
+            .timeline li:nth-child(odd)::after{
+                content: "◉";
+                font-size: 200%;
+                display: inline-block;
+                transform: translateX(166%) translateY(-225%);
+                color: orange;
+            }
+            .timeline li:nth-child(even) p {
+                margin-bottom: 6%;
+            }
+            .timeline li:nth-child(even) time{
+                transform: translateX(20%);
+                display: inline-block;
+            }
+            time{
+                color: orangered;
+            }
+            
+           
+
+        </style>
+
+    </head>
+    <body>
+        <section class="timeline">
+            <h1>Events Organized by our COMPANY</h1>
+            <ol>
+                <li>
+                    <h2>Lorem, ipsum.</h2>
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing </p>
+                    <time>2 January 2023 ⏰</time>
+                </li>
+                <li>
+                    <h2>Sunt, suscipit!</h2>
+                    <h3>Dolorum similique amet ab!</h3>
+                    <p>Impedit asperiores consequuntur ipsum accusamus distinctio dolorum iusto.</p>
+                    <time>16 February 2023 ⏰</time>
+                </li>
+                <li>
+                    <h2>Quidem, suscipit.</h2>
+                    <h3>Necessitatibus ex officiis at.</h3>
+                    <p>Consectetur eligendi nulla similique quia! Officia, omnis </p>
+                    <time>25 April 2023 ⏰</time>
+                </li>
+                <li>
+                    <h2>Laboriosam, ducimus.</h2>
+                    <h3>Eos dignissimos fugit quos.</h3>
+                    <p>Fuga amet iusto quae totam voluptatem earum nihil.</p>
+                    <time>01 May 2023 ⏰</time>
+                </li>
+                <li>
+                    <h2>Qui, alias.</h2>
+                    <h3>Labore beatae vel ducimus?</h3>
+                    <p>Quod, inventore illum doloremque quisquam facere sapiente </p>
+                    <time>26 June 2023 ⏰</time>
+                </li>
+                <li>
+                    <h2>Saepe, neque.</h2>
+                    <h3>Alias non mollitia asperiores!</h3>
+                    <p>Voluptate deserunt, sequi sapiente ut velit facere </p>
+                    <time>30 June 2023 ⏰</time>
+                </li>
+                <li>
+                    <h2>Voluptate, provident!</h2>
+                    <h3>Tempora voluptates dolorem officia!</h3>
+                    <p>Ratione a tempora fugit, impedit voluptate expedita </p>
+                    <time>26 July 2023 ⏰</time>
+                </li>
+                <li>
+                    <h2>Tempora, nobis?</h2>
+                    <h3>Soluta ex nemo fugiat.</h3>
+                    <p>Quasi ut sed nobis laborum vel sint voluptatum!</p>
+                    <time>16 August 2023 ⏰</time>
+                </li>
+                <li>
+                    <h2>Assumenda, quae.</h2>
+                    <h3>Facilis hic laudantium numquam.</h3>
+                    <p>Aliquam nobis facilis odit commodi fugiat, totam odit commodi  </p>
+                    <time>25 September 2023 ⏰</time>
+                </li>
+                <li>
+                    <h2>Doloribus, nostrum?</h2>
+                    <h3>Exercitationem soluta explicabo vitae!</h3>
+                    <p>Officia repudiandae deserunt ullam nesciunt, velit cupiditate </p>
+                    <time>6 December 2023 ⏰</time>
+                </li>
+            </ol>
+
+        </section>
+    </body>
+</html>
