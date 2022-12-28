@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Changa+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Changa+One&family=Lemon&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Bebas+Neue&family=Changa+One&family=Felipa&family=Lemon&display=swap" rel="stylesheet">
+
+
+
+    </head>
+    <style>
+        body{
+            perspective: 1000px;
+        }
+
+       
+        .book {
+            margin: 0;
+            margin-top: 100px;
+            transform: rotateY(-30deg);
+            transform-style: preserve-3d;
+            width: 500px;
+            height: 800px;
+
+            background-image: url(spartacus.png);
+            background-repeat:no-repeat;
+            background-size: contain;
+            color: white;
+            display: inline-block;
+        }
+        
+    
+        .book h1{
+            padding-top: 90%;
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+            font-size: 130px;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(#955933, #c8c597);
+            color: transparent;
+            margin: 0;
+        }
+        .book h2{
+            text-align: center;
+            margin: 0;
+            font-family: 'Arvo', serif;
+            opacity: 75%;
+        }
+        .book h3{
+            margin-top: 70px;
+            font-family: 'Arvo', serif;
+            text-align: center;
+            opacity: 75%;
+        }
+        .netflix{
+            
+            width: 140px;
+            height: 140px;
+            background-color:#241e20 ;
+            color: white;
+            display: inline-block;
+            border-radius: 200px;
+            transform: translateX(-135%) translateY(-420%) rotateY(-30deg);
+            
+        }
+       .text1{
+        margin-top:  20px;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 30px;
+        text-align: center;
+        color: red;
+       }
+       .text2{
+        font-family:Arial, Helvetica, sans-serif;
+        text-align: center;
+        
+       }
+       .book .back{
+        width: 100%;
+        height: 100%;
+        background-color: #1a2d35;
+        transform: translateY(-96%) translateZ(-100px);
+        transform-style: preserve-3d;
+       }
+       .book .blank{
+        width: 100px;
+        height: 98%;
+        background-image: linear-gradient(90deg, gray,white);
+        background-size: 5px;
+        transform: translateY(-198%) translateX(430%) translateZ(-50px) rotateY(90deg);
+       }
+
+        
+    </style>
+    <body>
+        <figure class="book">
+           
+            <h1>SPARTACUS</h1>
+            <h2>RAFFAELLO GIOVAGNOLI</h2>
+            <h3>∕⁄ bestseller</h3>
+            <div class="back"></div>
+            <div class="blank"></div>
+        </figure>
+        <div class="netflix">
+            <div class="text1">NETFLIX</div>
+            <div class="text2">ACUM UN FILM PE NETFLIX</div>
+        </div>
+
+        
+    </body>
+</html>
