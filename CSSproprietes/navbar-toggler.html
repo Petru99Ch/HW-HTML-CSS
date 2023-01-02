@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Navigation Toggler Menu</title>
+        <style>
+            body{
+                background-color: #345;
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+            }
+            .menu{
+                background-color: #567;
+                margin-top: -260px;
+                transition: 0.5s;
+            }
+            .menu:target{
+                margin-top: 0;
+                
+            }
+
+            .menu-title{
+                margin: 0;
+                padding: 10px;
+            }
+            .menu-list{
+                margin: 0;
+                list-style: none;
+                padding: 0;
+                
+            }
+            .menu-list li{
+                border-bottom: 1px solid #345;
+            }
+
+            a{
+               
+                text-decoration: none;
+                color: white;
+                padding: 10px;
+                display: block;
+            }
+            li:first-child{
+                border-top: 1px solid #345;
+            }
+
+            a:hover{
+                background-color: #678;
+            }
+            a::before{
+                content: "✔";
+                padding: 10px;
+                color: rgb(1, 252, 1);
+            }
+            .not-available::before{
+                content: "✘";
+                color: red;
+            }
+            .toggler{
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                line-height: 60px;
+                border-radius: 200px;
+                background-color: red;
+                padding: 0;
+                margin-left: 40px;
+            }
+            .toggler::before{
+                content: none;
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <nav class="menu" id="navigation">
+            <h2 class="menu-title">Our cuisine</h2>
+                <ul class="menu-list">
+                    <li><a href="">Pizza</a></li>
+                    <li><a href="">Kebab</a></li>
+                    <li><a class="not-available" href="">Soup</a></li>
+                    <li><a href="">Salade</a></li>
+                    <li><a href="">Sushi</a></li>            
+                </ul>
+                <a class="toggler" href="#navigation">MENU</a>
+        </nav>
+    </body>
+</html>
