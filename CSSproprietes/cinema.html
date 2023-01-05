@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cinema Map</title>
+        <style>
+
+            body{
+                background-color: #333;
+                font-family: Arial;
+                color: white;
+            }
+            h1{
+                padding-left: 45%;
+                
+            }
+            .cinema{
+                text-align: center;
+            }
+            .cinema .vip,
+            .cinema .main,
+            .cinema .front{
+                padding: 15px;
+            }
+            
+            .cinema .vip span{
+                text-align: center;
+                background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Orange-Seat-icon.png);
+                display: inline-block;
+                width: 72px;
+                height: 72px;
+            }
+            .cinema .main span,
+            .cinema .front span{
+                text-align: center;
+                background-image: url(https://icons.iconarchive.com/icons/archigraphs/modern-chairs/72/Magenta-Seat-icon.png);
+                display: inline-block;
+                width: 72px;
+                height: 72px;
+            }
+            
+            .cinema .main .row:first-child span:nth-child(4),
+            .cinema .main .row:nth-child(2) span:nth-child(4),
+            .cinema .main .row:last-child span:nth-child(4) {
+                margin-right: 72px;
+            }
+            
+            .cinema .vip .row span:nth-child(3)::after{
+                content: url(https://icons.iconarchive.com/icons/custom-icon-design/pretty-office-2/48/man-icon.png);
+                vertical-align: top;
+                transform: translateY(100%); 
+                /* Nu functioneaza transform */
+            }
+
+            .cinema .main .row:nth-child(2) span:nth-child(4)::before{
+                content: url(https://icons.iconarchive.com/icons/custom-icon-design/flatastic-5/48/Woman-icon.png);
+                vertical-align: top;
+                transform: translateY(100%);
+                /* Nu functioneaza transform */
+
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <h1>Cinema Map</h1>
+        <div class="cinema">
+            <div class="vip">
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div>
+            </div>
+
+            <div class="main">
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span></div>
+
+            </div>
+
+            <div class="front">
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div>
+                <div class="row"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span></div>
+            </div>
+        </div>
+    </body>
+</html>
