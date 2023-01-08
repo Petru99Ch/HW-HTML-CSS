@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dropdown</title>
+        <style>
+            body{
+                background-color: #344;
+                color: white;
+                font-size: 50px;
+                font-family: Arial, Helvetica, sans-serif;              
+            }
+
+            .dropdown{
+                user-select: none;
+                /* border: 2px solid red; */
+                width: 330px;
+                height: 70px;
+                margin: 200px auto;
+                padding: 20px;
+                background-color: #999;
+                border-radius: 20px;    
+                box-shadow: 3px 3px 3px 3px rgb(50, 49, 49);                    
+            }       
+            .dropdown .list li {
+                width: 300px;
+                height: 70px;
+                                
+            }
+            .dropdown .list a {
+                text-decoration: none;
+                color:white;
+                padding: 10px 60px;                
+            }
+            .dropdown input{
+                display: none;
+            }
+            
+            .dropdown .list{
+                width: 300px;
+                background-color: #aaa;
+                display: none;
+                padding: 0;
+                margin: 0;
+                margin-top: 20px;
+                list-style: none;
+                border-radius: 5px;
+                /* border: 2px solid blue; */
+                box-shadow: 3px 3px 3px 3px rgb(50, 49, 49);   
+            }
+            .dropdown  .list li:hover {
+                background-color: #bbb;
+                border-radius: 5px;
+            }
+            
+            .dropdown input:checked + label + .list {
+                display: block;             
+            }
+            .dropdown label::after{
+                content: "⬇";
+                margin-left: 50px;
+            }
+            .dropdown input:checked + label::after{
+                content: "⬆";
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <nav class="dropdown">
+
+            <input type="checkbox" id="input">
+
+            <label for="input">
+                Dropdown
+            </label>
+
+            
+
+            <ul class="list">
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+            </ul>
+        </nav>
+        
+    </body>
+</html>
