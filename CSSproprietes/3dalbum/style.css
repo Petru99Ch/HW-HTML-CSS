@@ -1,0 +1,46 @@
+body{
+    background-color: #223;
+}
+
+.album{
+   border: 10px solid white;
+    width: 600px;
+    height: 800px;
+    margin: 500px auto;
+    perspective: 1000px;
+
+}
+
+.album div{
+    
+    height: 0;
+    transition: 1s;
+   
+}
+
+.album div:nth-child(3)  {
+    transform: rotateY(0);
+    transform-origin: left;
+}
+
+.album div:nth-child(2)  {
+    /* transform: rotateY(-45deg); */
+    transform-origin: left;
+    filter: brightness(68%);
+}
+
+.album div:nth-child(1)  {
+    
+    filter: brightness(50%);
+}
+
+.album:hover>div:nth-child(3){
+    transform: rotateY(-60deg);
+}
+
+.album:hover>div:nth-child(2){
+    transform: rotateY(-45deg);
+}
+
+
+
