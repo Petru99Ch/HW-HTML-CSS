@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Block Model Example - City</title>
+  <style>
+    #square{
+      width: 600px;
+      height: 600px;
+      border: 10px solid #999;
+      padding: 10px;
+    }
+    #park{
+      width: 400px;
+      height: 400px;
+      background-color: lightgreen;
+      float: left;
+    }
+    #building-1{
+      width: 180px;
+      height: 400px;
+      background-color: lightblue;
+      float: left;
+      margin-left: 10px;
+    }
+    #building-2{
+      width: 400px;
+      height: 180px;
+      background-color: lightblue;
+      float: left;
+      margin-top: 10px;
+    }
+    #market{
+      background-color: lightgrey;
+      float: left;
+      margin-top: 10px;
+      margin-left: 10px;
+      height: 180px;     
+      width: 180px;
+      
+    }
+    #market .monument{
+      font-size: 50px;
+      padding: 55px 60px;
+    
+     
+      
+    }
+    #park .tree{
+      font-size: 50px;
+      color: green;
+      padding: 60px 35px;
+      float: left;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section id="square">
+
+    <div id="park">
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+      <div class="tree">&#5848;</div>
+    </div>
+    <div id="building-1"></div>
+    <div id="building-2"></div>
+    <div id="market">
+      <div class="monument">
+        &#9816;
+      </div>
+    </div>
+
+  </section>
+
+
+</body>
+</html>
